@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array dan Perulangan</title>
+</head>
+<body>
+    <!-- membuat aray -->
+    <script>
+        var produk=["Senter","Radio","Antena","Obeng"]
+        document.write("<h3>daftar produk: </h3>")
+        // menggunakan perulangan untuk list array
+        document.write("<ol>")
+        // menggunakan perulangn for
+            for(let i=0;i<produk.length;i++){
+                document.write(`<li>${ produk[i] }</li>`)
+            }
+        document.write("</ol>")
+
+        var product=["Senter","Radio","Antena","Obeng"]
+        document.write("<h3>daftar produk: </h3>")
+        document.write("<ol>")
+        //menggunakan perulangan foreach
+        product.forEach((data) => {
+        document.write(`<li>${data}</li>`);
+        });
+        document.write("</ol>");
+    </script>
+</body>
+</html>
